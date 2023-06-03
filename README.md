@@ -46,8 +46,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Jo-cloud85/tic-tac-toe-game.git](https://github.com/Jo-cloud85/tic-tac-toe-game.git)
+- Live Site URL: [https://jo-cloud85.github.io/tic-tac-toe-game/](https://jo-cloud85.github.io/tic-tac-toe-game/)
 
 ## My process
 
@@ -57,7 +57,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+- Desktop-first workflow
 - [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
@@ -70,7 +70,6 @@ To continue with **Bonus 1**: Save the game state in the browser so that it’s 
 
 ### Useful resources
 
-- [https://tunetank.com/?themes=27&moods=4](https://tunetank.com/?themes=27&moods=4)
 - [Animista](https://animista.net/play/entrances/bounce-in/bounce-in-left) - A website for simple animations
 
 ## Author
