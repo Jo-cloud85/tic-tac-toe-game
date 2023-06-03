@@ -247,7 +247,7 @@ function endGameRound(isDraw) {
 function calculateAndDisplayResult (winnerIs) {
     resultsContainerBg.style.display = "block";
     resultsContainer.style.display = "flex";
-    resultsImg.src = `/public/assets/icon-${winnerIs}.svg`;
+    resultsImg.src = `./public/assets/icon-${winnerIs}.svg`;
     resultsImg.alt = `icon-${winnerIs}`;
 
     if (winnerIs === player1 && player1 === 'o') {
