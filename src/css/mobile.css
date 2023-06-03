@@ -1,0 +1,144 @@
+@media screen and (max-width: 600px) {
+    main {
+        width: var(--r327);
+    }
+
+    /* ----------------------- New game menu start ------------------------ */
+    #pick-mark-sub-container {
+        margin: 2rem 0;
+    }
+
+    .new-game-btn {
+        font-size: 1rem;
+        line-height: var(--r20);
+        letter-spacing: 1px;
+        padding: var(--r14) 0 var(--r22) 0;
+        width: 100%;
+        transition: 0.3s ease;
+    }
+
+    /* -------------------- Vs CPU - Choose Difficulty -------------------- */
+    #choose-difficulty-container {
+        top: calc(50% - (var(--r228)/2));
+        height: var(--r228);
+    }
+
+    #choose-difficulty-container > p {
+        font-size: 1.5rem;
+        line-height: var(--r30);
+        letter-spacing: 1.5px;
+    }
+    
+    /* ------------------------- Gameboard start -------------------------- */
+    #turn {
+        gap: var(--r9);
+        padding: var(--r9) var(--r15) var(--r13) var(--r15);
+    }
+
+    #turn svg {
+        height: 1rem;
+        width: 1rem;
+    }
+
+    #turn path {
+        scale: 0.25;
+    }
+
+    #turn span:last-child {
+        font-size: var(--r14);
+        line-height: var(--r18);
+        letter-spacing: 0.88px;
+    }
+
+    #reset-btn {
+        height: 2.5rem;
+        width: 2.5rem;
+    }   
+    
+    #reset-btn > img {
+        height: var(--r15);
+        width: var(--r15);
+    } 
+
+    #gameboard {
+        margin: 4rem 0 var(--r20) 0;
+    }
+
+    .square-cell {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .o,
+    .o-outline,
+    .x,
+    .x-outline {
+        background-repeat: no-repeat;
+        background-size: 2.5rem;
+        background-position: 50% calc(50% - 2px);
+    }
+
+    .score {
+        padding: var(--r12) 0;
+    }
+
+    .score p:first-child {
+        font-size: var(--r12);
+        line-height: var(--r15);
+        letter-spacing: 0.75px;
+    }
+
+    .score p:last-child {
+        font-size: var(--r20);
+        line-height: var(--r25);
+        letter-spacing: 1.25px;
+    }
+
+    /* ------------------------ Results & restart ------------------------- */
+    #results-container,
+    #round-tied-container,
+    #restart-container {
+        top: calc(50% - (var(--r228)/2));
+        height: var(--r228);
+    }
+
+    #results-note {
+        font-size: var(--r14);
+        line-height: var(--r18);
+        letter-spacing: 0.88px;
+    }
+
+    #results-main {
+        gap: 0.5rem;
+    }
+
+    #results-main > img {
+        height: var(--r30);
+        width: var(--r30);
+    }
+
+    #results-main > p,
+    #round-tied-note,
+    #restart-container > p {
+        font-size: 1.5rem;
+        line-height: var(--r30);
+        letter-spacing: 1.5px;
+    }
+
+    /* ------------------------------ Audio ------------------------------- */
+    #audio-toggle-switch {
+        box-shadow: 0px -3px 0px var(--dark-navy-shadow) inset ;
+        font-size: 1rem;
+        top: 1rem;
+        right: 1rem;
+        width: 2.5rem;
+    }
+
+    #audio-toggle-switch:hover {
+        scale: 0.95;
+    }
+
+    #audio-toggle-switch i {
+        padding-bottom: 3px;
+    }
+}

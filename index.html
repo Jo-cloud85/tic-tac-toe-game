@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/assets/favicon-32x32.png">
+  <title>Frontend Mentor | Tic Tac Toe</title>
+
+  <!-- Icons from Font Awesome -->
+  <script src="https://kit.fontawesome.com/2484b333e1.js" crossorigin="anonymous"></script>
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./src/css/bounce-in-left-animation.css">
+  <link rel="stylesheet" href="./src/css/mobile.css">
+
+</head>
+
+<body>
+
+  <div id="audio-toggle-switch">
+    <audio id="backgroundAudio" src="./public/assets/tunetank.com_5626_childrens-holiday_by_vipsound.mp3" loop volume="0.3"></audio>
+    <i class="fa-solid fa-volume-high"></i><!-- <i class="fa-solid fa-volume-xmark"></i> -->
+  </div>
+
+  <main>
+    <!-- New game menu start -->
+    <div id="new-game-menu-start-container">
+      <img class="logo" src="./public/assets/logo.svg" alt="logo">
+      <div id="pick-mark-sub-container">
+        <p>Pick Player 1's mark</p>
+        <div id="mark-btn-grp">
+          <button type="button" class="mark-btn" id="x-mark">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.002 1.147 32 18.145 48.998 1.147a3 3 0 0 1 4.243 0l9.612 9.612a3 3 0 0 1 0 4.243L45.855 32l16.998 16.998a3 3 0 0 1 0 4.243l-9.612 9.612a3 3 0 0 1-4.243 0L32 45.855 15.002 62.853a3 3 0 0 1-4.243 0L1.147 53.24a3 3 0 0 1 0-4.243L18.145 32 1.147 15.002a3 3 0 0 1 0-4.243l9.612-9.612a3 3 0 0 1 4.243 0Z" fill="#31C3BD" fill-rule="evenodd" />
+            </svg>
+          </button>
+          <button type="button" class="mark-btn active" id="o-mark">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 0c17.673 0 32 14.327 32 32 0 17.673-14.327 32-32 32C14.327 64 0 49.673 0 32 0 14.327 14.327 0 32 0Zm0 18.963c-7.2 0-13.037 5.837-13.037 13.037 0 7.2 5.837 13.037 13.037 13.037 7.2 0 13.037-5.837 13.037-13.037 0-7.2-5.837-13.037-13.037-13.037Z" fill="#F2B137" />
+            </svg>
+          </button>
+        </div>
+        <p>Remember: X goes first</p>
+      </div>
+      <div id="new-game-btn-grp">
+        <button class="new-game-btn" id="vs-cpu-btn" type="button" name="new-game-w-cpu">New Game (vs CPU)</button>
+        <button class="new-game-btn" id="vs-player-btn" type="button" name="new-game-w-player">New Game (vs player)</button>
+      </div>
+    </div>
+
+    <!-- If user chooses CPU >> choose difficulty level >> game board start -->
+    <div id="choose-difficulty-container">
+      <p>Choose difficulty</p>
+      <div class="next-action-btn-grp" id="choose-difficulty-lvl">
+        <button class="next-action-btn" id="easy-btn" type="button">easy</button>
+        <button class="next-action-btn" id="medium-btn" type="button">medium</button>
+        <button class="next-action-btn" id="hard-btn" type="button">hard</button>
+      </div>
+    </div>
+
+    <!-- If user chooses player >> game board start -->
+    <div id="gameboard-start-container">
+      <div id="gameboard-header">
+        <img class="logo" src="./public/assets/logo.svg" alt="logo">
+        <div id="turn">
+          <img id="mark" src="./public/assets/icon-x-gray.svg" alt="mark">
+          <span>turn</span>
+        </div>
+        <button id="reset-btn" type="reset"><img src="./public/assets/icon-restart.svg" alt="icon-restart"></button>
+      </div>
+
+      <div id="gameboard"></div>
+
+      <div id="score-summary">
+        <div class="score" id="x-score">
+          <p>X (YOU)</p>
+          <p id="x-score-num">0</p>
+        </div>
+        <div class="score" id="ties-score">
+          <p>Ties</p>
+          <p id="ties-score-num">0</p>
+        </div>
+        <div class="score" id="o-score">
+          <p>O (CPU)</p>
+          <p id="o-score-num">0</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Result of each game -->
+    <div id="results-container-bg">
+      <div id="results-container">
+        <p id="results-note">Oh no, you lost...</p>
+        <div id="results-main">
+          <img src="/public/assets/icon-o.svg" alt="icon-o">
+          <p>Takes the round</p>
+        </div>
+        <div class="next-action-btn-grp" id="quit-or-nextround">
+          <button class="next-action-btn" id="quit-btn" type="button">quit</button>
+          <button class="next-action-btn" id="next-round-btn" type="button">next round</button>
+        </div>
+      </div>
+
+      <div id="restart-container">
+        <p>Restart game?</p>
+        <div class="next-action-btn-grp" id="cancel-or-restart">
+          <button class="next-action-btn" id="no-cancel-btn" type="button">no, cancel</button>
+          <button class="next-action-btn" id="yes-restart-btn" type="button">yes, restart</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <script src="./src/js/script.js"></script>
+  <script src="./src/js/audio.js"></script>
+</body>
+
+</html>
