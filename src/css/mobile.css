@@ -61,7 +61,7 @@
     } 
 
     #gameboard {
-        margin: 4rem 0 var(--r20) 0;
+        margin: 3rem 0 var(--r20) 0;
     }
 
     .square-cell {
@@ -132,6 +132,7 @@
         top: 1rem;
         right: 1rem;
         width: 2.5rem;
+        height: 2.5rem;
     }
 
     #audio-toggle-switch:hover {
